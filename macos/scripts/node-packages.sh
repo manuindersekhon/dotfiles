@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NODE_VERSION=18.17.1
+NODE_VERSION=22.12.0
 
 # Make sure `nodenv` is installed.
 if ! [[ $(which nodenv) ]]; then
@@ -20,6 +20,6 @@ echo -e "Node installation successful!\n"
 # Install global NPM packages.
 if [[ $(which npm) ]]; then
     echo "Installing global NPM packages..."
-    npm install -g prettier
+    # npm install -g prettier
     echo -e "NPM packages installed successfully!\n"
 fi

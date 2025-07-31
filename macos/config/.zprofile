@@ -2,6 +2,9 @@
 # Possible values are:
 #   0 -> Running in native mode.
 #   1 -> Running in Rosetta mode.
-if [ "$(sysctl -in sysctl.proc_translated)" = "0" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+# if [ "$(sysctl -in sysctl.proc_translated)" = "0" ]; then
+    # eval "$(/opt/homebrew/bin/brew shellenv)"
+# fi
+
+# For now, assume that it is running under native.
+eval "$(/opt/homebrew/bin/brew shellenv)"

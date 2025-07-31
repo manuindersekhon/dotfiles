@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-RUBY_VERSION=3.2.2
+RUBY_VERSION=3.3.6
 
 # Make sure `rbenv` is installed.
 if ! [[ $(which rbenv) ]]; then
@@ -21,6 +21,7 @@ echo -e "Ruby installation successful!\n"
 if [[ $(which gem) ]]; then
     echo "Installing Gems..."
     gem install colorls
+    gem install cocoapods
     gem manpages --update-all
     echo -e "Gems installed successfully!\n"
 else

@@ -1,23 +1,16 @@
 #!/usr/bin/env bash
 
 BREW_PREFIX="$(brew --prefix)"
-IBREW_PREFIX="$(brew --prefix)"
-
-# For M1 Mac.
-if [[ $(uname -m) == "arm64" ]]; then
-    alias ibrew="arch -x86_64 /usr/local/bin/brew"
-    IBREW_PREFIX="$(ibrew --prefix)"
-fi
 
 # Add 'coreutils' to PATH variable so macOS recognises utilities like
 # sha256sum and sha512sum.
-PATH="$BREW_PREFIX/opt/curl/bin:$PATH"                                      # Curl.
-PATH="$BREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"                      # Coreutils.
-PATH="$BREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"                        # GNU Sed.
-PATH="$BREW_PREFIX/opt/gnu-getopt/bin:$PATH"                                # GNU getopt.
-PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"                           # Grep.
-PATH="$BREW_PREFIX/opt/libressl/bin:$PATH"                                  # LibreSSL.
-PATH="$BREW_PREFIX/sbin:$PATH"                                              # Homebrew formulae.
+PATH="$BREW_PREFIX/opt/curl/bin:$PATH"                 # Curl.
+PATH="$BREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH" # Coreutils.
+PATH="$BREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"   # GNU Sed.
+PATH="$BREW_PREFIX/opt/gnu-getopt/bin:$PATH"           # GNU getopt.
+PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"      # Grep.
+PATH="$BREW_PREFIX/opt/libressl/bin:$PATH"             # LibreSSL.
+PATH="$BREW_PREFIX/sbin:$PATH"                         # Homebrew formulae.
 PATH="$PATH:/System/Library/Frameworks:/Library/Developer"
 
 # Android development settings for React-Native.
@@ -34,21 +27,13 @@ export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 
 # Make Neovim the default editor.
-export EDITOR="nvim"
-
-# Ensure that any other Terminal multiplexer (like Tmux) does not mess up the
-# coloring.
-export TERM="xterm-256color-italic"
+export EDITOR="vim"
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING="UTF-8"
 
 # You may need to manually set your Locale.
 export LC_ALL="en_US.UTF-8"
-
-# DO NOT DO THIS. Not recommended as it produces extra output which causes problems with other utilities that use FZF.
-# But keeping it here for reference purposes.
-# export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
 
 # Find hidden files with FZF.
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
@@ -92,15 +77,15 @@ export LESS_TERMCAP_ue=$default
 # Begin underline.
 export LESS_TERMCAP_us=$green
 
-############################# Miscellaneous #############################
+# Flutter path.
+export PATH=$HOME/development/flutter/bin:$PATH
 
-# Disable Virtualenv's prompt.
-export VIRTUAL_ENV_DISABLE_PROMPT=1
+export CC=clang
+export CXX=clang++
 
-# Disable security audit of folders that `oh-my-zsh` uses for completions.
-# In particular, they are:
-#   /usr/local/share/zsh
-#   /usr/local/share/zsh/site-functions
-# This command can help as well:
-#   compaudit | xargs chmod g-w,o-w
-# export ZSH_DISABLE_COMPFIX=true
+export COLIMA_HOME="${HOME}/.colima"
+export DOCKER_HOST="unix://${COLIMA_HOME}/default/docker.sock"
+
+# export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
+export PATH="$PATH":"$HOME/.pub-cache/bin"

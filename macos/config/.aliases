@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Show files/folders vertically and produce a colored output.
-alias ls="ls -pA --group-directories-first --color=always"
+alias ls="ls -FCl --group-directories-first --color=always"
 
 # Use colorls for better colored output.
 alias lc="colorls -A --sd"
@@ -11,16 +11,16 @@ alias ll="colorls -lA --sd"
 alias cat="bat"
 
 # Prevent opening Vi accidentally.
-alias vi="nvim"
+alias vi="vim"
 
 # Use Neovim instead of Vim.
-alias vim="nvim"
+# alias vim="nvim"
 
 # Alias for Neovim tabs.
-alias nvim="nvim -p"
+# alias nvim="nvim -p"
 
 # Alias for Ranger.
-alias r="ranger"
+# alias r="ranger"
 
 # Start python3 and pip3 by default.
 alias python="python3"
@@ -30,8 +30,8 @@ alias pip="pip3"
 alias rm="trash"
 
 # Open vagrant.
-alias vu="vagrant up && vagrant ssh"
-alias vh="vagrant halt"
+# alias vu="vagrant up && vagrant ssh"
+# alias vh="vagrant halt"
 
 # Create aliases for showing and hiding hidden files on macOS.
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES; \
@@ -43,13 +43,13 @@ alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO; \
 alias enable-fingerprint="sudo sed -i '3 i\auth       sufficient     pam_tid.so' /etc/pam.d/sudo"
 
 # Alias to LOVE2D.
-alias love="/Applications/love.app/Contents/MacOS/love"
+# alias love="/Applications/love.app/Contents/MacOS/love"
 
 # Alias for sqlite.
-alias sqlite="sqlite3"
+# alias sqlite="sqlite3"
 
 # Avoid SSH issues with Tmux.
-alias ssh="TERM=xterm-256color ssh"
+# alias ssh="TERM=xterm-256color ssh"
 
 # Reload a React-Native app on Android.
 alias rr="adb shell input text 'RR'"
@@ -59,20 +59,23 @@ alias shake="adb shell input keyevent 82"
 alias gs=""
 
 # Alias for Tower.
-alias tower="gittower"
+# alias tower="gittower"
 
 # Handy aliases for Homebrew.
 alias buu="brew update && brew upgrade && brew cleanup"
 
+# Redis Instance.
+alias redis-dev='docker run -d --name redis-dev -p 6379:6379 redis:latest'
+
 # Docker tools.
-alias dcupbd="docker compose up --build -d"
-alias lzd="lazydocker"
+# alias dcupbd="docker compose up --build -d"
+# alias lzd="lazydocker"
 
 # Kubernetes.
-alias kctl="kubectl"
-alias kctx="kubectx"
-alias kns="kubens"
+# alias kctl="kubectl"
+# alias kctx="kubectx"
+# alias kns="kubens"
 
-# Aliases for quickly switching architectures.
-alias arm="env /usr/bin/arch -arm64 /bin/zsh --login"
-alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"
+# # Aliases for quickly switching architectures.
+# alias arm="env /usr/bin/arch -arm64 /bin/zsh --login"
+# alias intel="env /usr/bin/arch -x86_64 /bin/zsh --login"

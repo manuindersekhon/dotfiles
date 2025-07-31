@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PYTHON_VERSION=3.11.5
+PYTHON_VERSION=3.13.3
 
 # Make sure `pyenv` is installed.
 if ! [[ $(which pyenv) ]]; then
@@ -20,7 +20,7 @@ echo -e "Python installation successful!\n"
 # Install Pip packages.
 if [[ $(which pip3) ]]; then
     echo "Installing Pip packages..."
-    pip3 install black gitlint neovim virtualenv
+    # pip3 install neovim --break-system-packages
     echo -e "Pip packages installed successfully!\n"
 else
     echo -e "Pip3 not found! Skipping Pip packages' installation...\n"

@@ -18,13 +18,7 @@ if ! [[ $(which brew) ]]; then
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     echo -e "Installation successful!\n"
 
-    # Evalulate homebrew correctly.
-    # TODO: Make this more elegant. For now, the following commented line has been added to `config/.zprofile`
-    # in a conditional manner with support for Intel Macs (which will be dropped at some point in the future).
-    # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-    if [ "$(sysctl -in sysctl.proc_translated)" = "0" ]; then
-        eval "$(/opt/homebrew/bin/brew shellenv)"
-    fi
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Install x86_64 version of homebrew to install packages which don't support Apple Silicon.
