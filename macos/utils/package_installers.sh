@@ -77,7 +77,7 @@ install_node_packages() {
     # Install global NPM packages
     if command -v npm &>/dev/null; then
         print_detail "Installing global NPM packages..."
-        npm install -g prettier
+        # npm install -g prettier
         print_detail "NPM packages installed successfully"
     else
         print_warning "npm command not found! Skipping NPM packages installation..."
@@ -158,7 +158,7 @@ install_ruby_gems() {
     if command -v gem &>/dev/null; then
         print_detail "Installing Gems..."
         # Uncomment the following line, and add gem names to install global gems.
-        # gem install
+        gem install cocoapods
         # Uncomment the following to add man pages support to installed gems.
         # gem manpages --update-all
 

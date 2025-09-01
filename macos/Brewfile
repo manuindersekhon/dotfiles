@@ -81,6 +81,7 @@ brew "google-java-format"
 brew "rust-analyzer"
 brew "shellcheck"
 brew "shfmt"
+brew "biome"
 
 # Container, Kubernetes & cloud tools.
 brew "ctop" # Like `top` command, but for Docker.
@@ -100,26 +101,23 @@ brew "ollama"
 # Security & privacy.
 brew "bitwarden-cli" # For using Bitwarden with Raycast.
 
-# Media & entertainment.
-brew "yt-dlp"
-
 # Miscellaneous.
 brew "kcat" # Apache Kafka producer and consumer.
 
 # Browsers.
-cask "firefox"
-cask "google-chrome"
 cask "zen"
+cask "arc"
+cask "microsoft-edge"
 
 # Development tools.
 cask "android-studio"
 cask "docker-desktop"
 cask "iterm2"
-cask "mongodb-compass"
 cask "postman"
 cask "raycast" # Alternative to Spotlight and Alfred with focus on development features.
 cask "redis-insight"
 cask "visual-studio-code"
+cask "dbeaver-community"
 
 # AI applications.
 cask "chatgpt"
@@ -139,8 +137,6 @@ cask "rectangle" # Window Manager. Alternative to Spectacle as it is no longer m
 cask "adguard"
 cask "appcleaner"
 cask "betterdisplay"
-cask "cloudflare-warp" # Best general purpose VPN.
-cask "daisydisk"
 cask "imageoptim"
 cask "istat-menus"
 cask "macmediakeyforwarder"
@@ -149,17 +145,13 @@ cask "mos" # Mouse utility.
 cask "neo-network-utility" # Network diagnostic tool.
 
 # Entertainment & media.
-cask "discord"
-cask "downie"
 cask "iina" # Much better native alternative to VLC.
-cask "lastfm" # Music scrobbling service.
-cask "qbittorrent" # Free and open-source BitTorrent client.
-cask "spotify"
 cask "whatsapp"
-cask "xld" # Audio converter.
+cask "vlc"
+cask "jdownloader"
+cask "telegram"
 
 # Content & reading.
-cask "netnewswire" # RSS reader.
 cask "notion"
 
 # Quick-look plugins.

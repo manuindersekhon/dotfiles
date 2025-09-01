@@ -120,3 +120,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # This command can help as well:
 #   compaudit | xargs chmod g-w,o-w
 # export ZSH_DISABLE_COMPFIX=true
+
+# Add Pub cache to PATH to access globally activated Dart/Flutter packages.
+PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH
