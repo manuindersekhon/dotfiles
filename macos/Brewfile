@@ -120,6 +120,7 @@ brew "ollama"
 
 # Miscellaneous.
 brew "kcat" # Apache Kafka producer and consumer.
+brew "FelixKratz/formulae/borders" # Borders for Aerospace.
 
 # Browsers.
 cask "microsoft-edge"
@@ -142,7 +143,6 @@ cask "lm-studio"
 cask "msty"
 
 # Productivity & utilities.
-cask "FelixKratz/formulae/borders" # Borders for Aerospace.
 cask "itsycal" # Utility for displaying calendar events in the menu bar.
 cask "karabiner-elements" # Utility for custom keymaps.
 cask "keyboardcleantool" # Utility for locking keyboard input while cleaning.
