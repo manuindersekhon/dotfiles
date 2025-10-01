@@ -157,7 +157,7 @@ install_ruby_gems() {
     if command -v gem &>/dev/null; then
         print_detail "Installing Gems..."
         # Uncomment the following line, and add gem names to install global gems.
-        # gem install
+        gem install cocoapods
         # Uncomment the following to add man pages support to installed gems.
         # gem manpages --update-all
 

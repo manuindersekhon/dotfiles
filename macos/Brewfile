@@ -118,29 +118,21 @@ brew "ccusage" # Tool for checking Claude Code usage.
 brew "gollama" # TUI for managing Ollama models.
 brew "ollama"
 
-# Security & privacy.
-brew "bitwarden-cli" # For using Bitwarden with Raycast.
-
-# Media & entertainment.
-brew "yt-dlp"
-
 # Miscellaneous.
 brew "kcat" # Apache Kafka producer and consumer.
 
 # Browsers.
-cask "firefox"
-cask "google-chrome"
+cask "microsoft-edge"
 cask "zen"
 
 # Development tools.
 cask "android-studio"
 cask "docker-desktop"
-cask "iterm2"
-cask "mongodb-compass"
+cask "wezterm"
 cask "postman"
-cask "raycast" # Alternative to Spotlight and Alfred with focus on development features.
 cask "redis-insight"
 cask "visual-studio-code"
+cask "dbeaver-community"
 
 # AI applications.
 cask "chatgpt"
@@ -161,9 +153,6 @@ cask "nikitabobko/tap/aerospace" # Window Manager
 # System utilities.
 cask "adguard"
 cask "appcleaner"
-cask "betterdisplay"
-cask "cloudflare-warp" # Best general purpose VPN.
-cask "daisydisk"
 cask "imageoptim"
 cask "istat-menus"
 cask "macmediakeyforwarder"
@@ -174,13 +163,10 @@ cask "the-unarchiver"
 
 # Entertainment & media.
 cask "discord"
-cask "downie"
 cask "iina" # Much better native alternative to VLC.
-cask "lastfm" # Music scrobbling service.
-cask "qbittorrent" # Free and open-source BitTorrent client.
-cask "spotify"
-cask "whatsapp"
 cask "xld" # Audio converter.
+cask "vlc"
+cask "jdownloader"
 
 # Content & reading.
 cask "netnewswire" # RSS reader.

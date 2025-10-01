@@ -306,11 +306,11 @@ configure_macos_preferences() {
     defaults write com.apple.finder NewWindowTarget -string "PfDe"
     defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
 
-    # Set ~/Documents/screenshots as the default location for screenshots.
+    # Set ~/Downloads/screenshots as the default location for screenshots.
     # By default, it is ~/Desktop.
     # This helps keep the Desktop clean.
-    mkdir -p "${HOME}/Documents/screenshots"
-    defaults write com.apple.screencapture location "${HOME}/Documents/screenshots"
+    mkdir -p "${HOME}/Downloads/screenshots"
+    defaults write com.apple.screencapture location "${HOME}/Downloads/screenshots"
 
     # Show icons for hard drives and removable media on the desktop.
     defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -409,9 +409,8 @@ configure_macos_preferences() {
     # Don't show recent applications in Dock.
     defaults write com.apple.dock show-recents -bool false
 
-    # Add iOS & Watch Simulator to Launchpad
+    # Add iOS to Launchpad
     sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-    sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
 
     # Hot corners
     # Possible values:
@@ -433,11 +432,11 @@ configure_macos_preferences() {
     # defaults write com.apple.dock wvous-tr-corner -int 4
     # defaults write com.apple.dock wvous-tr-modifier -int 0
     # Bottom left screen corner → Start screen saver
-    defaults write com.apple.dock wvous-bl-corner -int 5
+    defaults write com.apple.dock wvous-bl-corner -int 0
     defaults write com.apple.dock wvous-bl-modifier -int 0
 
     # Stop the bottom right screen corner from opening Quick Note.
-    defaults write com.apple.dock wvous-br-corner -int 1
+    defaults write com.apple.dock wvous-br-corner -int 0
     defaults write com.apple.dock wvous-br-modifier -int 0
 
     ###############################################################################
@@ -601,9 +600,6 @@ configure_macos_preferences() {
 
     # Install System data files & security updates.
     defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
-
-    # Automatically download apps purchased on other Macs.
-    defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
 
     # Turn on app auto-update.
     defaults write com.apple.commerce AutoUpdate -bool true
