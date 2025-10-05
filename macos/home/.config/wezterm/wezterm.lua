@@ -5,7 +5,6 @@ local config = wezterm.config_builder()
 
 -- Font settings
 config.font = wezterm.font_with_fallback({
-    { family = "Cascadia Code" },
     {
         family = "Monaspace Argon",
         -- Enable Monaspace Texture Healing and Coding Ligatures
@@ -28,7 +27,7 @@ config.show_new_tab_button_in_tab_bar = false -- Since we can't theme it.
 
 config.window_frame = {
     font = wezterm.font({ family = "Cascadia Code", weight = "Bold" }),
-    font_size = 13,
+    font_size = 14,
     active_titlebar_bg = base.cursor_fg,
     active_titlebar_fg = base.foreground,
     inactive_titlebar_bg = base.cursor_fg,
