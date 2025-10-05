@@ -64,6 +64,7 @@ brew "iperf3" # Network performance measurement tool.
 # Media processing.
 brew "ffmpeg"
 brew "imagemagick" # For conversion of images from one format to another.
+brew "poppler" # For PDF previews in Yazi.
 
 # Package managers & utilities.
 brew "mas" # Mac App Store CLI.
@@ -129,10 +130,10 @@ cask "zen"
 # Development tools.
 cask "android-studio"
 cask "docker-desktop"
-cask "wezterm"
 cask "postman"
 cask "redis-insight"
 cask "visual-studio-code"
+cask "wezterm@nightly" # Use nightly build as there hasn't been a stable release in a long time.
 cask "dbeaver-community"
 
 # AI applications.
@@ -188,10 +189,10 @@ cask "flutter"
 cask "temurin"
 
 # Fonts.
-cask "font-cascadia-code-nf" # Default terminal font
+cask "font-cascadia-code" # Default terminal font
 cask "font-fira-code" # Backup programming/terminal font
 cask "font-ibm-plex-mono" # Postman font
 cask "font-ibm-plex-sans" # Better Sans font for applications that allow us to set it, e.g., Zen/Firefox
-cask "font-meslo-lg-nerd-font" # Default non-ASCII terminal font
 cask "font-monaspace" # Default programming font
 cask "font-source-serif-4" # Better Serif font for applications that allow us to set it, e.g., Zen/Firefox
+cask "font-symbols-only-nerd-font" # Default non-ASCII terminal font
