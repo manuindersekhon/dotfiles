@@ -11,11 +11,10 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 indent_style = space
 indent_size = 4
+max_line_length = 120
 
 # Shell scripts (shfmt will use these settings)
 [*.{sh,bash,zsh}]
-indent_style = space
-indent_size = 4
 switch_case_indent = true
 
 # YAML files typically use 2 spaces

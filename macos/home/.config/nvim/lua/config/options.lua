@@ -7,7 +7,7 @@ local opt = vim.opt
 -- General
 -- Having longer `updatetime` (default is 4000 ms = 4 s) leads to noticeable
 -- delays and poor user experience.
-opt.updatetime = 1000 -- Reduce the time after typing stops, to write the swap to disk
+-- opt.updatetime = 1000 -- Reduce the time after typing stops, to write the swap to disk
 
 -- UI
 opt.winborder = "rounded"
@@ -22,6 +22,10 @@ opt.virtualedit = "block" -- Allows slightly better selection of text when in Vi
 opt.inccommand = "split" -- Show preview of incremental commands in a separate preview buffer.
 opt.splitbelow = true -- Split new windows below the current one
 opt.splitright = true -- Vertical split new windows to the right of the current one
+
+-- Highlight the line number on the cursor line.
+opt.cursorline = true
+opt.cursorlineopt = "number"
 
 -- Folding
 opt.foldcolumn = "1"
@@ -49,6 +53,7 @@ opt.softtabstop = 4 -- Idk. Need this for consistent tab behavior I guess.
 opt.autoindent = true -- Keep auto-indentation. Default is also `true`. Added for brevity.
 opt.smartindent = true -- Allow smart-indentation for C-like programs that use `{`.
 opt.linebreak = true -- During wrapping, break lines at word boundaries rather than breaking in the middle of a word.
+opt.wrap = false
 
 -- Files and buffers
 opt.encoding = "utf-8"
@@ -81,3 +86,11 @@ vim.g.ai_mode = "minimal"
 
 -- Disable mappings created automatically by tmux navigator, as we use our own mappings.
 vim.g.tmux_navigator_no_mappings = 1
+
+-- Disable all providers for languages that we don't use. This speeds up startup time and reduces memory usage.
+-- Note: If you need to use a language, you can remove the corresponding line below.
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_python_provider = 0
+vim.g.loaded_python3_provider = 0
