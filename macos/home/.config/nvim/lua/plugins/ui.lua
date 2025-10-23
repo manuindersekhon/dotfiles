@@ -199,7 +199,11 @@ return {
             },
             view = {
                 width = 50,
-                side = "right",
+                side = "left",
+            },
+            update_focused_file = {
+                enable = true,
+                update_root = false,
             },
             renderer = {
                 group_empty = true,

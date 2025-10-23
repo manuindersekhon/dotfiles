@@ -21,7 +21,7 @@ local base = wezterm.color.get_builtin_schemes()[color_scheme]
 config.color_scheme = color_scheme -- Provide base color scheme.
 config.colors = base -- Explicitly ensure colors are applied in all elements of the terminal.
 
-config.window_decorations = "RESIZE"
+config.window_decorations = "MACOS_FORCE_DISABLE_SHADOW | RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.show_new_tab_button_in_tab_bar = false -- Since we can't theme it.
 
@@ -43,8 +43,6 @@ config.command_palette_font = wezterm.font({ family = "Cascadia Code" })
 config.command_palette_font_size = 15
 
 -- Miscellaneous
-config.front_end = "WebGpu" -- Use Metal/Vulkan/DX12 rather than OpenGL.
-config.max_fps = 120
 config.scrollback_lines = 10000
 config.audible_bell = "Disabled"
 config.initial_cols = 150 -- Useful when not using a TWM
