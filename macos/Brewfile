@@ -92,21 +92,13 @@ brew "shfmt"
 brew "stylua"
 brew "yamlfmt"
 
-# LSP (Language Server Protocol) servers.
-brew "bash-language-server"
-brew "basedpyright"
-brew "gopls"
-brew "helm-ls"
-brew "jdtls"
-brew "lua-language-server"
-brew "marksman"
-brew "typescript-language-server"
-brew "vscode-langservers-extracted"
-brew "yaml-language-server"
-
 # Container, Kubernetes & cloud tools.
 brew "ctop" # Like `top` command, but for Docker.
 brew "dive" # Inspect Docker images in depth.
+brew "docker"
+brew "docker-buildx"
+brew "docker-completion"
+brew "docker-compose"
 brew "helm"
 brew "k9s"
 brew "kubernetes-cli"
@@ -115,7 +107,6 @@ brew "lazydocker"
 brew "stern"
 
 # AI & machine learning.
-brew "ccusage" # Tool for checking Claude Code usage.
 brew "gollama" # TUI for managing Ollama models.
 brew "ollama"
 
@@ -129,7 +120,6 @@ cask "zen"
 
 # Development tools.
 cask "android-studio"
-cask "docker-desktop"
 cask "postman"
 cask "redis-insight"
 cask "visual-studio-code"
@@ -154,6 +144,7 @@ cask "nikitabobko/tap/aerospace" # Window Manager
 # System utilities.
 cask "adguard"
 cask "appcleaner"
+cask "daisydisk"
 cask "imageoptim"
 cask "istat-menus"
 cask "macmediakeyforwarder"
@@ -163,9 +154,7 @@ cask "neo-network-utility" # Network diagnostic tool.
 cask "the-unarchiver"
 
 # Entertainment & media.
-cask "discord"
 cask "iina" # Much better native alternative to VLC.
-cask "xld" # Audio converter.
 cask "vlc"
 cask "jdownloader"
 
@@ -186,7 +175,7 @@ cask "webpquicklook"
 
 # Languages and SDKs.
 cask "flutter"
-cask "temurin"
+cask "temurin@25"
 
 # Fonts.
 cask "font-cascadia-code" # Default terminal font
