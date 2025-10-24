@@ -5,6 +5,7 @@ return {
     -- Skip lazy loading to avoid issues with different Neovim entry modes.
     -- Plugin is lightweight, so we load it without performance concerns but still defer with VeryLazy.
     event = "VeryLazy",
+    enabled = false,
     opts = {
         mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
         hide_cursor = false,
