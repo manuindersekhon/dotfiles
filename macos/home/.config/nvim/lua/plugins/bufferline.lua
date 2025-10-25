@@ -4,7 +4,7 @@ return {
     "akinsho/bufferline.nvim",
     version = "*",
     event = { "BufReadPre", "BufNewFile" },
-    dependencies = { "catppuccin", "nvim-tree/nvim-web-devicons" },
+    dependencies = { "vscode", "catppuccin", "nvim-tree/nvim-web-devicons" },
     ---@module "bufferline"
     ---@type bufferline.UserConfig
     opts = {

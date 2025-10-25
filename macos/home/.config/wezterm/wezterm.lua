@@ -15,7 +15,7 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 15
 
 -- Appearance
-local color_scheme = "Catppuccin Mocha"
+local color_scheme = "Vs Code Dark+ (Gogh)"
 local base = wezterm.color.get_builtin_schemes()[color_scheme]
 
 config.color_scheme = color_scheme -- Provide base color scheme.
