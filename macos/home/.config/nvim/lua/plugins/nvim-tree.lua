@@ -57,7 +57,7 @@ return {
             end,
         },
         view = {
-            width = 50,
+            width = 40,
             side = "left",
         },
         update_focused_file = {
