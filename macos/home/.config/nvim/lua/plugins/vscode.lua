@@ -6,7 +6,9 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-        style = "dark",
+        italic_comments = true,
+        underline_links = true,
+        terminal_colors = true,
     },
     config = function(_, opts)
         require("vscode").setup(opts)
