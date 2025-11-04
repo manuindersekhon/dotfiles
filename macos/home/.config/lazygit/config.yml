@@ -5,6 +5,7 @@ gui:
   showFileIcons: true
   sidePanelWidth: 0.25
   scrollHeight: 30 # Default is too less
+  commandLogSize: 5
 
 git:
   # Better diff context
