@@ -105,6 +105,7 @@ brew "kubernetes-cli"
 brew "kubectx"
 brew "lazydocker"
 brew "stern"
+brew "colima"
 
 # AI & machine learning.
 brew "gollama" # TUI for managing Ollama models.
@@ -117,6 +118,7 @@ brew "FelixKratz/formulae/borders" # Borders for Aerospace.
 # Browsers.
 cask "microsoft-edge"
 cask "zen"
+cask "arc"
 
 # Development tools.
 cask "android-studio"
@@ -130,6 +132,7 @@ cask "dbeaver-community"
 cask "chatgpt"
 cask "claude"
 cask "claude-code"
+brew "gemini-cli"
 cask "lm-studio"
 cask "msty"
 
@@ -144,7 +147,6 @@ cask "nikitabobko/tap/aerospace" # Window Manager
 # System utilities.
 cask "adguard"
 cask "appcleaner"
-cask "daisydisk"
 cask "imageoptim"
 cask "istat-menus"
 cask "macmediakeyforwarder"
